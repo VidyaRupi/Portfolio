@@ -3179,6 +3179,8 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #ff6d02;
   border-color: #ff6d02;
+  box-shadow: 0 0 16px 4px #764ba2, 0 2px 12px rgba(102,126,234,0.15);
+  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
 }
 
 .btn-outline-warning:focus, .btn-outline-warning.focus {
@@ -7138,6 +7140,12 @@ a.close.disabled {
 
 .align-text-top {
   vertical-align: text-top !important;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
 }
 
 .bg-primary {
@@ -12122,6 +12130,12 @@ pre .code {
   font-weight: bold;
   opacity: .8;
   color: #212529;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
 }
 
 .header-mini {
